@@ -1,3 +1,23 @@
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+
+  .col_1 {width: 8.33%;}
+  .col_2 {width: 16.66%;}
+  .col_3 {width: 25%;}
+  .col_4 {width: 33.33%;}
+  .col_5 {width: 41.66%;}
+  .col_6 {width: 50%;}
+  .col_7 {width: 58.33%;}
+  .col_8 {width: 66.66%;}
+  .col_9 {width: 75%;}
+  .col_10 {width: 83.33%;}
+  .col_11 {width: 91.66%;}
+  .col_12 {width: 100%;}
+
+[class*="col_"] {
+  float: left;
+}
+
+
 body {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   background-repeat: no-repeat;
@@ -70,8 +90,18 @@ body {
   padding-top: 30px;
 }
 
+.container-list {
+  box-sizing: border-box;
+  background-color: grey;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+
 .Tempo-list {
   display: inline-block;
   font-size: 18px;
   color: #FF6A00;
+}
+
 }

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 const Tempo = props => (
-    <div>
-        { props.cidade && props.pais && <p> <div className="Tempo-list"> Cidade: </div> {props.cidade}, {props.pais}</p> }
-        { props.temperatura && <p> <div className="Tempo-list">  Temperatura: </div> {props.temperatura}</p> }
-        { props.humidade && <p> <div className="Tempo-list">  Humidade: </div> {props.humidade}</p> }
-        { props.descricao && <p> <div className="Tempo-list">  Descrição: </div> {props.descricao}</p> }
+    <ul className="col_3 container-list">
+        { props.cidade && props.pais && <p> <li className="Tempo-list"> Cidade: </li> {props.cidade}, {props.pais}</p> }
+        { props.temperatura && <p> <li className="Tempo-list">  Temperatura: </li> {props.temperatura}</p> }
+        { props.humidade && <p> <li className="Tempo-list">  Humidade: </li> {props.humidade}</p> }
+        { props.descricao && <p> <li className="Tempo-list">  Descrição: </li> {props.descricao}</p> }
         { props.erro && <p> {props.erro}</p> }
-    </div>    
+    </ul>    
 );
 
 export default Tempo;
